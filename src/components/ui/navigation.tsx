@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navItems = [
+const navItems: Array<{href: string, label: string}> = [
   { href: "/", label: "Gallery" },
   { href: "/bento", label: "Bentos" },
   { href: "/casestudies", label: "Case Studies" },
@@ -38,7 +38,7 @@ export function Navigation() {
             {navItems.map((item) => (
               <Link
                 key={item.href}
-                href={item.href as string}
+                href={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
                   pathname === item.href
                     ? "bg-gray-900 text-white"
