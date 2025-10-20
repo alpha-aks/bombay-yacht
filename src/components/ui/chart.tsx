@@ -34,7 +34,6 @@ function ChartContainer({
 }
 
 const ChartTooltip = RechartsPrimitive.Tooltip
-}
 
 export {
   ChartContainer,
