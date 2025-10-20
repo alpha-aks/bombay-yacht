@@ -38,7 +38,7 @@ export function Navigation() {
             {navItems.map((item) => (
               <Link
                 key={item.href}
-                href={item.href}
+                href={item.href as string}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
                   pathname === item.href
                     ? "bg-gray-900 text-white"
@@ -53,4 +53,4 @@ export function Navigation() {
       </div>
     </nav>
   );
-} 
+}
