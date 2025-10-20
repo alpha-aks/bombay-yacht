@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { Route } from "next";
 
 export function Navigation() {
   const pathname = usePathname();
@@ -18,10 +19,10 @@ export function Navigation() {
             </Link>
           </div>
           <div className="flex items-center space-x-1 overflow-x-auto">
-            <Link href="/" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Gallery</Link>
-            <Link href="/bento" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/bento" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Bentos</Link>
-            <Link href="/casestudies" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/casestudies" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Case Studies</Link>
-            <Link href="/contacts" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/contacts" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Contact</Link>
+            <Link href="/" as={Route} className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Gallery</Link>
+            <Link href="/bento" as={Route} className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/bento" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Bentos</Link>
+            <Link href="/casestudies" as={Route} className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/casestudies" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Case Studies</Link>
+            <Link href="/contacts" as={Route} className={`px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${pathname === "/contacts" ? "bg-gray-900 text-white" : "text-gray-700 hover:text-gray-900 hover:bg-gray-100"}`}>Contact</Link>
           </div>
         </div>
       </div>
