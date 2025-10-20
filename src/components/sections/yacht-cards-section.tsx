@@ -142,7 +142,7 @@ export function YachtCardsSection() {
 
   // Auto-scroll effect with pause on hover and visibility detection
   useEffect(() => {
-    let interval: number | null = null;
+    let interval: NodeJS.Timeout | null = null;
     const carousel = document.querySelector('.carousel-container');
     
     const startAutoScroll = () => {
