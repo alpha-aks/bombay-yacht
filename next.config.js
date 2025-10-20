@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/yacht-web-master' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/yacht-web-master/' : '',
   images: {
     domains: [
       'images.unsplash.com',
@@ -12,6 +15,7 @@ const nextConfig = {
       'images.prismic.io',
     ],
     formats: ['image/avif', 'image/webp'],
+    unoptimized: process.env.NODE_ENV === 'production',
   },
   experimental: {
     typedRoutes: true,
