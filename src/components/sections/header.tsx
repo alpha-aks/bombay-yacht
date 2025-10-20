@@ -8,7 +8,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#001433] text-white">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#00102A]/90 backdrop-blur-sm text-white border-b border-white/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -21,11 +21,8 @@ export function Header() {
             <Link href="#charter" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
               Charter
             </Link>
-            <Link href="#buy" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
-              Buy
-            </Link>
-            <Link href="#sell" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
-              Sell
+            <Link href="/gallery" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
+              Gallery
             </Link>
             <Link href="#build" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
               Build
@@ -36,7 +33,7 @@ export function Header() {
             <Link href="#crew" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
               Crew
             </Link>
-            <Link href="#about" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
+            <Link href="/about" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
               About
             </Link>
             <Link href="#contact" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
@@ -72,11 +69,8 @@ export function Header() {
               <Link href="#charter" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
                 Charter
               </Link>
-              <Link href="#buy" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
-                Buy
-              </Link>
-              <Link href="#sell" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
-                Sell
+              <Link href="/gallery" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
+                Gallery
               </Link>
               <Link href="#build" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
                 Build
@@ -87,7 +81,7 @@ export function Header() {
               <Link href="#crew" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
                 Crew
               </Link>
-              <Link href="#about" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
+              <Link href="/about" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
                 About
               </Link>
               <Link href="#contact" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">

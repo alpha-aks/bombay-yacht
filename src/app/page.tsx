@@ -9,7 +9,6 @@ import { DestinationsPreview } from "@/components/sections/destinations-preview"
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { ServiceCategories } from "@/components/sections/service-categories";
 import { CharterGuideSection } from "@/components/sections/charter-guide-section";
-import { LuxuryPortfolioSection } from "@/components/sections/luxury-portfolio-section";
 import { FinalCTABanner } from "@/components/sections/final-cta-banner";
 import { Footer } from "@/components/sections/footer";
 
@@ -27,7 +26,6 @@ export default function Home() {
       <TestimonialsSection />
       <ServiceCategories />
       <CharterGuideSection />
-      <LuxuryPortfolioSection />
       <FinalCTABanner />
       <Footer />
     </>

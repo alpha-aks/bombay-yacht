@@ -45,12 +45,11 @@ export function Footer() {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm uppercase tracking-wider">
             <a href="#charter" className="hover:text-[#e31e24] transition-colors">Charter</a>
-            <a href="#buy" className="hover:text-[#e31e24] transition-colors">Buy</a>
-            <a href="#sell" className="hover:text-[#e31e24] transition-colors">Sell</a>
+            <a href="/gallery" className="hover:text-[#e31e24] transition-colors">Gallery</a>
             <a href="#build" className="hover:text-[#e31e24] transition-colors">Build</a>
             <a href="#manage" className="hover:text-[#e31e24] transition-colors">Manage</a>
             <a href="#crew" className="hover:text-[#e31e24] transition-colors">Crew</a>
-            <a href="#about" className="hover:text-[#e31e24] transition-colors">About</a>
+            <a href="/about" className="hover:text-[#e31e24] transition-colors">About</a>
             <a href="#contact" className="hover:text-[#e31e24] transition-colors">Contact</a>
           </nav>
         </div>
@@ -141,7 +140,7 @@ export function Footer() {
         <div className="flex justify-center mt-8">
           <div className="w-24 h-24 relative opacity-50">
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a578887f-72eb-48df-b257-ebb823c0a81a-fraseryachts-com/assets/images/crest@3x-439vitpu-28.png?"
+              src="https://images.prismic.io/alphas/aPYpQLpReVYa3eBD_Gemini_Generated_Image_n0isldn0isldn0is-removebg-preview.png?auto=format,compress"
               alt="Bombay Yacht Crest"
               fill
               className="object-contain"
