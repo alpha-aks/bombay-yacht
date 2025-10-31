@@ -3,7 +3,7 @@
 import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState, useRef } from "react";
-import { motion, useScroll, useTransform, useInView, domAnimation, LazyMotion } from "framer-motion";
+import { motion, useScroll, useTransform, useInView, domAnimation, LazyMotion, Variants } from "framer-motion";
 
 // Create an alias for motion to use as 'm' for shorter syntax
 const m = motion;
@@ -20,25 +20,31 @@ const container = {
   },
 };
 
-const item = {
+const item: Variants = {
   hidden: { y: 20, opacity: 0 },
   show: {
     y: 0,
     opacity: 1,
     transition: {
       duration: 0.5,
-      ease: "easeOut"
+      ease: [0.4, 0, 0.2, 1]
     },
   },
   hover: {
     y: -10,
-    transition: { duration: 0.3, ease: "easeOut" },
+    transition: { 
+      duration: 0.3, 
+      ease: [0.4, 0, 0.2, 1] 
+    },
   },
 };
 
 const imageHover = {
   scale: 1.05,
-  transition: { duration: 0.5, ease: "easeInOut" },
+  transition: { 
+    duration: 0.5, 
+    ease: [0.4, 0, 0.2, 1] 
+  },
 };
 
 const imageTap = {
