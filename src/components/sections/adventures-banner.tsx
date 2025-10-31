@@ -56,15 +56,7 @@ export function AdventuresBanner() {
         </div>
       </div>
 
-      {/* Overlay Text */}
-      <div className="absolute inset-0 flex items-end justify-center pb-24 md:pb-32 will-change-transform" style={{ transform: `translateY(${textY}px)` }}>
-        <div className="relative text-center">
-          <div className="absolute inset-0 -inset-x-20 bg-gradient-to-t from-black/60 to-transparent -z-10" />
-          <h2 className="text-3xl md:text-5xl font-light tracking-wider text-white px-4">
-            FROM THE HIGHEST MOUNTAINS TO THE DEEPEST OCEANS
-          </h2>
-        </div>
-      </div>
+      {/* Overlay Text - Removed as per request */}
 
       {/* CTA Button */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">

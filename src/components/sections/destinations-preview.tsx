@@ -18,8 +18,8 @@ export function DestinationsPreview() {
         <div className="relative grid md:grid-cols-3 gap-0 max-w-7xl mx-auto">
           <div className="relative h-[400px] md:h-[500px]">
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a578887f-72eb-48df-b257-ebb823c0a81a-fraseryachts-com/assets/images/destination-mediterranean-2_Fraseryachts-osSeLte5.tif?"
-              alt="Mediterranean destination"
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a578887f-72eb-48df-b257-ebb823c0a81a-fraseryachts-com/assets/images/lifestyle-yachts-superyachts-emir-Beach-set-up_fraseryachts-kZVJyAmT-27.jpg?"
+              alt="Bombay Yacht Mediterranean destination"
               fill
               className="object-cover"
             />
@@ -27,7 +27,7 @@ export function DestinationsPreview() {
           <div className="relative h-[400px] md:h-[500px]">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a578887f-72eb-48df-b257-ebb823c0a81a-fraseryachts-com/assets/images/Lifestyle-Beach-Set-up-MAGIC_Fraser-yachts-HztxJGcZ-18.jpg?"
-              alt="Caribbean destination"
+              alt="Bombay Yacht Caribbean destination"
               fill
               className="object-cover"
             />

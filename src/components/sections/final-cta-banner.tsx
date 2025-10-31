@@ -20,7 +20,7 @@ export function FinalCTABanner() {
           YOUR DREAM CHARTER VACATION STARTS HERE
         </h2>
         <button className="border-2 border-white text-white px-8 py-3 text-sm uppercase tracking-wider font-medium hover:bg-white hover:text-[#001433] transition-colors">
-          Contact Fraser Today
+          Contact Bombay Yacht Today
         </button>
       </div>
     </section>

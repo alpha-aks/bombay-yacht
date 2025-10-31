@@ -15,7 +15,7 @@ const nextConfig = {
       'images.prismic.io',
     ],
     formats: ['image/avif', 'image/webp'],
-    unoptimized: process.env.NODE_ENV === 'production',
+    unoptimized: true,
   },
   experimental: {
     typedRoutes: true,

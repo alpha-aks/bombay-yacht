@@ -7,10 +7,11 @@ function formatWithCommas(n: number): string {
 }
 
 function parseNumberParts(value: string): { prefix: string; number: number; suffix: string; formatter: (n: number) => string } {
-  const match = value.match(/^(?<prefix>[^0-9]*)?(?<num>[0-9,\.]+)(?<suffix>.*)?$/);
-  const prefix = match?.groups?.prefix ?? "";
-  const raw = match?.groups?.num ?? "0";
-  const suffix = match?.groups?.suffix ?? "";
+  // Use indexed capture groups for broader compatibility
+  const match = value.match(/^(?:([^0-9]*))?([0-9,\.]+)(.*)?$/);
+  const prefix = (match && match[1]) ? match[1] : "";
+  const raw = (match && match[2]) ? match[2] : "0";
+  const suffix = (match && match[3]) ? match[3] : "";
 
   // Remove commas from numeric part
   const num = Number((raw || "0").replace(/,/g, ""));
@@ -20,8 +21,8 @@ function parseNumberParts(value: string): { prefix: string; number: number; suff
   if (suffix.trim().startsWith("+")) {
     formatter = (n: number) => `${formatWithCommas(Math.round(n))}+`;
   } else if (suffix.trim().toUpperCase().startsWith("M")) {
-    // For values like $91M
-    formatter = (n: number) => `${prefix}${Math.round(n)}M`;
+    // Convert millions to thousands and format as ₹Xk
+    formatter = (n: number) => `₹${Math.round(n * 1)}k`;
     return { prefix: "", number: num, suffix: "", formatter };
   } else if (prefix.trim().startsWith("$")) {
     formatter = (n: number) => `$${formatWithCommas(Math.round(n))}`;
