@@ -52,11 +52,11 @@ const imageHover = {
     duration: 0.5, 
     ease: "easeInOut"
   }
-};
+} as const;
 
 const imageTap = {
   scale: 0.98
-};
+} as const;
 
 const featuredYachts = [
   {
@@ -206,8 +206,14 @@ export function FeaturedYachtsCarousel() {
                     {/* Image Container */}
                     <m.div 
                       className="relative aspect-[4/3] overflow-hidden"
-                      whileHover={imageHover}
-                      whileTap={imageTap}
+                      whileHover={{ 
+                        scale: 1.05,
+                        transition: { duration: 0.5, ease: "easeInOut" }
+                      }}
+                      whileTap={{ 
+                        scale: 0.98,
+                        transition: { duration: 0.2 }
+                      }}
                     >
                       <Image
                         src={yacht.image}
