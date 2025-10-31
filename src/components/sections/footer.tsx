@@ -45,7 +45,6 @@ export function Footer() {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex flex-wrap justify-center gap-6 md:gap-8 text-sm uppercase tracking-wider">
             <a href="#charter" className="hover:text-[#e31e24] transition-colors">Charter</a>
-            <a href="/gallery" className="hover:text-[#e31e24] transition-colors">Gallery</a>
             <a href="#build" className="hover:text-[#e31e24] transition-colors">Build</a>
             <a href="#manage" className="hover:text-[#e31e24] transition-colors">Manage</a>
             <a href="#crew" className="hover:text-[#e31e24] transition-colors">Crew</a>

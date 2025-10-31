@@ -21,9 +21,6 @@ export function Header() {
             <Link href="#charter" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
               Charter
             </Link>
-            <Link href="/gallery" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
-              Gallery
-            </Link>
             <Link href="#build" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
               Build
             </Link>
@@ -68,9 +65,6 @@ export function Header() {
             <div className="flex flex-col gap-4">
               <Link href="#charter" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
                 Charter
-              </Link>
-              <Link href="/gallery" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
-                Gallery
               </Link>
               <Link href="#build" className="text-sm uppercase tracking-wider hover:text-[#e31e24] transition-colors">
                 Build
