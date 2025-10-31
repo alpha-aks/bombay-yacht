@@ -7,12 +7,18 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Bombay Yacht - Luxury Yacht Charters',
   description: 'Experience the ultimate luxury yacht charter experience with Bombay Yacht',
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
-}
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export default function RootLayout({
   children,

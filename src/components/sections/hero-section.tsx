@@ -34,7 +34,7 @@ export function HeroSection() {
           playsInline
           poster="/images/hero-fallback.jpg"
         >
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src="https://alphas.cdn.prismic.io/alphas/aIehZFGsbswqTXOv_119445-717712231_small.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-black/50" />
