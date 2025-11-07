@@ -1,49 +1,46 @@
 'use client';
 
-import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
-import { UrlObject } from 'url';
 
-type Route = `/${string}`;
-type FooterLink = {
+interface FooterLink {
   name: string;
-  href: Route | UrlObject;
-};
+  href: string;
+}
 
-type FooterSection = {
+interface FooterSection {
   title: string;
   links: FooterLink[];
-};
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
-  const footerLinks: FooterSection[] = [
+  const footerLinks = [
     {
       title: 'Explore',
       links: [
-        { name: 'Home', href: '/' as const },
-        { name: 'Yachts', href: '/yachts' as const },
-        { name: 'Destinations', href: '/destinations' as const },
-        { name: 'Corporate Events', href: '/corporate-events' as const },
+        { name: 'Home', href: '/' },
+        { name: 'Yachts', href: '/yachts' },
+        { name: 'Destinations', href: '/destinations' },
+        { name: 'Corporate Events', href: '/corporate-events' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { name: 'About Us', href: '/about' as const },
-        { name: 'Contact', href: '/contact' as const },
-        { name: 'Blog', href: '/blog' as const },
-        { name: 'Careers', href: '/careers' as const },
+        { name: 'About Us', href: '/about' },
+        { name: 'Contact', href: '/contact' },
+        { name: 'Blog', href: '/blog' },
+        { name: 'Careers', href: '/careers' },
       ],
     },
     {
       title: 'Support',
       links: [
-        { name: 'FAQ', href: '/faq' as const },
-        { name: 'Help Center', href: '/help' as const },
-        { name: 'Safety', href: '/safety' as const },
-        { name: 'Report an Issue', href: '/report' as const },
+        { name: 'FAQ', href: '/faq' },
+        { name: 'Help Center', href: '/help' },
+        { name: 'Safety', href: '/safety' },
+        { name: 'Report an Issue', href: '/report' },
       ],
     },
   ];
@@ -99,12 +96,12 @@ export default function Footer() {
                 <ul className="mt-4 space-y-3">
                   {section.links.map((link) => (
                     <li key={link.name}>
-                      <Link
-                        href={link.href}
+                      <a 
+                        href={link.href} 
                         className="text-base text-gray-400 hover:text-white transition-colors"
                       >
                         {link.name}
-                      </Link>
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -137,26 +134,26 @@ export default function Footer() {
               &copy; {currentYear} Bombay Yacht. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0 flex space-x-6">
-              <Link
-                href="/terms" as const
+              <a
+                href="/terms"
                 className="text-sm text-gray-400 hover:text-white transition-colors"
               >
                 Terms of Service
-              </Link>
+              </a>
               <span className="text-gray-600">•</span>
-              <Link
-                href="/privacy" as const
+              <a
+                href="/privacy"
                 className="text-sm text-gray-400 hover:text-white transition-colors"
               >
                 Privacy Policy
-              </Link>
+              </a>
               <span className="text-gray-600">•</span>
-              <Link
-                href="/cookies" as const
+              <a
+                href="/cookies"
                 className="text-sm text-gray-400 hover:text-white transition-colors"
               >
                 Cookies
-              </Link>
+              </a>
             </div>
           </div>
         </div>
