@@ -9,29 +9,29 @@ import 'aos/dist/aos.css';
 const yachts = [
   {
     id: 1,
-    name: "CARINTHIA VII",
-    builder: "Lürssen",
+    name: "FAIRLINE 40",
+    builder: "MOTOR YACHT",
     year: "2002 (2023)",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a578887f-72eb-48df-b257-ebb823c0a81a-fraseryachts-com/assets/images/C7%20winner%20thumbnail%20profile-JERlABGb-1.jpg?",
-    length: "97m / 318ft",
-    guests: "24",
-    cabins: "12",
-    crew: "30",
-    price: "₹1,500,000",
+    image: "https://images.prismic.io/alphas/aQ2DI7pReVYa4OEo_2005-fairline-targa-40--power-9543934-20241118095110862-1_XLARGE.jpg.webp?auto=format,compress",
+    length: "12m / 40ft",
+    guests: "18",
+    cabins: "2",
+    crew: "5",
+    price: "₹10,000",
     photos: 45,
     videos: 3,
   },
   {
     id: 2,
-    name: "SOLANDGE",
-    builder: "Lürssen",
+    name: "JEANNEAU 34.2",
+    builder: "MOTOR YACHT",
     year: "2013",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a578887f-72eb-48df-b257-ebb823c0a81a-fraseryachts-com/assets/images/160309_Solandge_Profile_no-FCMkQBzS-2.jpg?",
-    length: "85m / 279ft",
-    guests: "12",
+    image: "https://images.prismic.io/alphas/aQ2I4rpReVYa4OFu_685abb8469555-xs.webp?auto=format,compress",
+    length: "85m / 34ft",
+    guests: "10",
     cabins: "8",
     crew: "23",
-    price: "₹1,200,000",
+    price: "₹7,000",
     photos: 38,
     videos: 2,
   },
@@ -287,7 +287,7 @@ export function YachtCardsSection() {
 
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4">
                       <p className="text-lg font-semibold text-[#001433]">
-                        From <span className="text-xl">{yacht.price}</span> <span className="text-sm font-normal">p/week</span>
+                        From <span className="text-xl">{yacht.price}</span> <span className="text-sm font-normal">onwards</span>
                       </p>
                       <button className="relative overflow-hidden rounded bg-[#001433] px-6 py-2 text-sm font-medium uppercase tracking-wider text-white transition-all duration-300 hover:scale-105 hover:bg-[#0a1929]">
                         <span className="relative z-10">Inquire Now</span>

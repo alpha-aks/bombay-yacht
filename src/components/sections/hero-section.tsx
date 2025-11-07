@@ -50,10 +50,9 @@ export function HeroSection() {
         {/* Hero Text */}
         <div className="text-center px-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light tracking-wide mb-4">
-            YACHT CHARTER
+            BOMBAY YACHT
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
-            Experience luxury on the water with our premium yacht charter services
           </p>
         </div>
       </div>

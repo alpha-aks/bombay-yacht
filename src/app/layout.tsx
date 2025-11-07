@@ -1,6 +1,9 @@
 import { Inter } from 'next/font/google';
 import { Providers } from './providers';
 import './globals.css';
+import ChatbaseScript from '@/components/ChatbaseScript';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,9 +30,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Providers>
-          {children}
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+          <ChatbaseScript />
         </Providers>
       </body>
     </html>
