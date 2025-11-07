@@ -2,11 +2,22 @@
 
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { UrlObject } from 'url';
+
+type FooterLink = {
+  name: string;
+  href: string | UrlObject;
+};
+
+type FooterSection = {
+  title: string;
+  links: FooterLink[];
+};
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
-  const footerLinks = [
+  const footerLinks: FooterSection[] = [
     {
       title: 'Explore',
       links: [
@@ -88,7 +99,7 @@ export default function Footer() {
                   {section.links.map((link) => (
                     <li key={link.name}>
                       <Link
-                        href={link.href}
+                        href={link.href as string}
                         className="text-base text-gray-400 hover:text-white transition-colors"
                       >
                         {link.name}
